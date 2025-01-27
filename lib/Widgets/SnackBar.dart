@@ -20,7 +20,7 @@ class SnackbarHelper {
       borderRadius: 8,
       margin: const EdgeInsets.all(10),
       duration: duration,
-      icon: icon != null ? Icon(icon, color: textColor) : null,
+      icon: icon != null ? Icon(icon, color: Colors.white) : null,
     );
   }
 }

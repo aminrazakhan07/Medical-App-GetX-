@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:medical_getx_app/Screens/HomeScr.dart';
 import 'package:medical_getx_app/Widgets/Buttom.dart';
+import 'package:medical_getx_app/Widgets/Glassify.dart';
 import 'package:medical_getx_app/Widgets/Indecator.dart';
 import 'package:medical_getx_app/Widgets/Onboad.dart';
-import 'package:medical_getx_app/Widgets/ScackBar.dart';
+import 'package:medical_getx_app/Widgets/SnackBar.dart';
 
 class Onboardring extends StatefulWidget {
   const Onboardring({super.key});
@@ -58,17 +59,37 @@ class _OnboardringState extends State<Onboardring> {
         ),
         bottomNavigationBar: Padding(
           padding: EdgeInsets.symmetric(horizontal: 15),
-          child: CustomButton(
-            lbl: 'Get Started',
+          child: GlassifyHelper.glassifyBottom(
+            height: 50,
+            width: 0,
+            borderRadius: BorderRadius.circular(25),
+            btnText: Center(
+                child: Text('Get Start',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18))),
             onTap: () {
-              ///
-              Get.offAll(const HomescrMedi());
-              SnackbarHelper.showSnackbar(
-                title: 'Click',
-                message: 'Successfully',
-              );
+              Get.offAll(HomescrMedi());
             },
           ),
+
+          ///////////  Glassifay
+          // CustomButton(
+          //   lbl: 'Get Started',
+          //   onTap: () {
+          //     ///
+          //     Get.offAll(const HomescrMedi());
+          //     SnackbarHelper.showSnackbar(
+          //       title: 'Click',
+          //       message: 'Successfully',
+          //       position: SnackPosition.BOTTOM,
+          //       icon: Icons.home_max,
+          //       backgroundColor: Colors.blueAccent,
+          //       textColor: Colors.white,
+          //     );
+          //   },
+          // ),
         ));
   }
 }

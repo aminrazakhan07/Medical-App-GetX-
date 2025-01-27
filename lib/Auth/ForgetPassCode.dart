@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medical_getx_app/Widgets/Buttom.dart';
-import 'package:medical_getx_app/Widgets/ScackBar.dart';
+import 'package:medical_getx_app/Widgets/SnackBar.dart';
 import 'package:medical_getx_app/Widgets/TextField.dart';
 
 class ForgetpasswordScr extends StatelessWidget {

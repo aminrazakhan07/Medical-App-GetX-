@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:medical_getx_app/Auth/LoginScr.dart';
 import 'package:medical_getx_app/Widgets/AlreadyHave.dart';
 import 'package:medical_getx_app/Widgets/Buttom.dart';
-import 'package:medical_getx_app/Widgets/ScackBar.dart';
+import 'package:medical_getx_app/Widgets/SnackBar.dart';
 import 'package:medical_getx_app/Widgets/TextField.dart';
 import 'package:medical_getx_app/Widgets/isDoctor.dart';
 
