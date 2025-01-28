@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:medical_getx_app/LocalNotific/NotifiSercise.dart';
 import 'package:medical_getx_app/Screens/HomeScr.dart';
-import 'package:medical_getx_app/Screens/Onboadring/OnBoardHome.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: Onboardring(),
+      home: HomescrMedi(),
     );
   }
 }

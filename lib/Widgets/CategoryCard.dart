@@ -1,9 +1,8 @@
 import 'package:flutter/widgets.dart';
 
 class CategoriesCard extends StatelessWidget {
-  const CategoriesCard({
-    super.key,
-  });
+  final String imge, title;
+  const CategoriesCard({super.key, required this.imge, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +16,9 @@ class CategoriesCard extends StatelessWidget {
                 height: 50,
                 width: 50,
                 child: Image.asset(
-                  'assets/plant.png',
+                  imge,
                 )),
-            Text('Category'),
+            Text(title),
           ],
         ),
       ),

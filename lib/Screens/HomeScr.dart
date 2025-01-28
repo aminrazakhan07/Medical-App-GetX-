@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:medical_getx_app/Auth/LoginScr.dart';
 import 'package:medical_getx_app/Widgets/CategoryCard.dart';
 import 'package:medical_getx_app/Widgets/Glassify.dart';
 import 'package:medical_getx_app/Widgets/Sliders.dart';
+import 'package:medical_getx_app/services/app_string.dart';
 
 class HomescrMedi extends StatelessWidget {
   const HomescrMedi({super.key, required});
@@ -37,31 +37,26 @@ class HomescrMedi extends StatelessWidget {
             child: Text('Categories'),
           ),
 
-          //
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                for (int i = 0; i < 10; i++) CategoriesCard(),
-              ],
+          //////
+          SizedBox(
+            height: 100,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: AppString().cataImgList.length,
+              itemBuilder: (context, index) {
+                var imgData = AppString().cataImgList;
+                var titleData = AppString().cataNameList;
+                return CategoriesCard(
+                  imge: imgData[index],
+                  title: titleData[index],
+                );
+              },
             ),
           ),
 
-          ///
+          ///////
           SizedBox(height: 20),
-          // GlassifyHelper.glassifyBottom(
-          //     height: 50,
-          //     width: 150,
-          //     btnText: Center(
-          //       child: Text(
-          //         'Click',
-          //         style: TextStyle(
-          //             color: Colors.white,
-          //             fontSize: 18,
-          //             fontWeight: FontWeight.bold),
-          //       ),
-          //     )),
-          //////
+
           SizedBox(height: 10),
           GlassifyHelper.glassifyBottom(
             height: 50,

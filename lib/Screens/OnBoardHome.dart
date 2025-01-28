@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:medical_getx_app/Screens/HomeScr.dart';
-import 'package:medical_getx_app/Widgets/Buttom.dart';
 import 'package:medical_getx_app/Widgets/Glassify.dart';
 import 'package:medical_getx_app/Widgets/Indecator.dart';
 import 'package:medical_getx_app/Widgets/Onboad.dart';
-import 'package:medical_getx_app/Widgets/SnackBar.dart';
 
 class Onboardring extends StatefulWidget {
   const Onboardring({super.key});

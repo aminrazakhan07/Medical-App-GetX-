@@ -55,30 +55,6 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
-////////// Normal Glassifay
-
-// Widget GlassifyBottom() {
-//   return Container(
-//     height: 50,
-//     width: 100,
-//     decoration: BoxDecoration(
-//         border: Border.all(color: Colors.white),
-//         borderRadius: BorderRadius.circular(30),
-//         gradient: LinearGradient(
-//           begin: Alignment.topLeft,
-//           end: Alignment.bottomRight,
-//           colors: [
-//             Colors.blue.withValues(alpha: 0.4),
-//             Colors.blue.withValues(alpha: 0.1),
-//           ],
-//         )),
-//   );
-// }
-
-//////////////// Glassmorphism
-
-import 'package:flutter/material.dart';
-
 class GlassifyHelper {
   static Widget glassifyBottom({
     final Widget? btnText,
@@ -119,3 +95,19 @@ class GlassifyHelper {
     );
   }
 }
+
+
+/////////////////////
+ // GlassifyHelper.glassifyBottom(
+          //     height: 50,
+          //     width: 150,
+          //     btnText: Center(
+          //       child: Text(
+          //         'Click',
+          //         style: TextStyle(
+          //             color: Colors.white,
+          //             fontSize: 18,
+          //             fontWeight: FontWeight.bold),
+          //       ),
+          //     )),
+          //////
