@@ -98,16 +98,16 @@ class GlassifyHelper {
 
 
 /////////////////////
- // GlassifyHelper.glassifyBottom(
-          //     height: 50,
-          //     width: 150,
-          //     btnText: Center(
-          //       child: Text(
-          //         'Click',
-          //         style: TextStyle(
-          //             color: Colors.white,
-          //             fontSize: 18,
-          //             fontWeight: FontWeight.bold),
-          //       ),
-          //     )),
-          //////
+//  GlassifyHelper.glassifyBottom(
+//               height: 50,
+//               width: 150,
+//               btnText: Center(
+//                 child: Text(
+//                   'Click',
+//                   style: TextStyle(
+//                       color: Colors.white,
+//                       fontSize: 18,
+//                       fontWeight: FontWeight.bold),
+//                 ),
+//               )),
+//           ////
